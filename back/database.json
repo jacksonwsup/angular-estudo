@@ -1,0 +1,72 @@
+{
+  "restaurantes": [
+    {
+      "id": 1,
+      "nome": "Resautante Tre-Fratelli",
+      "taxaFrete": "9.00"
+    },
+    {
+      "id": 1,
+      "nome": "Piola - Famosi Per La Pizza",
+      "taxaFrete": "12.00"
+    },
+    {
+      "id": 1,
+      "nome": "Originale Cucina e Pizzeria",
+      "taxaFrete": "15.00"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Coca Cola 2L",
+      "preco": "10.00"
+    },
+    {
+      "id": 2,
+      "nome": "Suco de Laranja",
+      "preco": "5.00"
+    },
+    {
+      "id": 3,
+      "nome": "Pizza A La Carte",
+      "preco": "45.00"
+    }
+  ],
+  "pedidos": [
+    {
+      "itens": [
+        {
+          "produto": 1,
+          "quantidade": 1
+        },
+        {
+          "produto": 2,
+          "quantidade": 1
+        },
+        {
+          "produto": 3,
+          "quantidade": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "itens": [
+        {
+          "produto": 1,
+          "quantidade": 1
+        },
+        {
+          "produto": 2,
+          "quantidade": 1
+        },
+        {
+          "produto": 3,
+          "quantidade": 1
+        }
+      ],
+      "id": 2
+    }
+  ]
+}

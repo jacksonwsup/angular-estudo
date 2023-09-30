@@ -1,0 +1,17 @@
+<div class="flex flex-col p-2">
+  <div class="mt-4 font-bold text-xl">Total do Pedido: {{ pedido.total | money }}</div>
+  <div class="text-lg font-bold mb-4">Itens do Pedido</div>
+  <div class="flex items-center p-4 border border-slate-400 w-full" *ngFor="let item of pedido.itens">
+    <div class="text-lg font-bold">
+      {{ item.produto.nome }}
+    </div>
+    <div class="flex flex-grow justify-end px-4 font-bold">
+      <h5>{{ item.produto.preco | money }}</h5>
+    </div>
+    <div class="flex gap-2">
+      <div class="w-10 h-10 text-2xl font-bold">{{ item.quantidade }}</div>
+      <button (click)="removerItem(item)" class="w-10 h-10 text-2xl font-bold text-white bg-red-500 rounded-md">-</button>
+    </div>
+  </div>
+  <button (click)="enviarPedido()" class="mt-4 w-full p-2 text-xl font-bold text-white bg-green-500 rounded-md">Enviar Pedido</button>
+</div>
